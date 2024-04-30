@@ -29,7 +29,7 @@ let myResume={
     ],
     "education": [
       {
-        "institution": "Elumalayan polytechnic college",
+        "institution": "Elumalayan polytechnic College",
         "department": "Information technology",
         "studyType": "fulltime",
         "batch start year": 2009,
