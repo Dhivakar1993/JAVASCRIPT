@@ -1,124 +1,61 @@
-// 1. question A.)
-class Movie{
-  constructor(title,studio,rating = "PG"){
-      this.title = title;
-      this.studio =studio;
-      this.rating = rating;
-  }
-  get getPG(){
-      let titles = "";
-      if(this.rating == "PG"){
-         titles+= this.title;
+let myResume={
+    "basics": {
+      "name": "Dhivakar M",
+      "email": "dhivadit@gamil.com",
+      "phone": 9786475024,
+      "degree": "DIT",
+      "location": {
+        "address": "1-103, kudiyan street, Maruthuvakkudi",
+        "postalCode": 609501,
+        "city": "kumbakonam",
+        "state": "Tamilnadu",
+        "country": "India"
+      },
+      "profiles": [
+        {
+          "website": "https://www.linkedin.com/in/dhivakar-manivannan-455bb75a",
+          "github":"https://github.com/Dhivakar1993"
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "Ogai technology",
+        "position": "Senior Executive",
+        "startDate": "2020-11-04",
+        "endDate": "2021-08-15",
+        "summary": "i am the business executive handling various task and gaining lots of experience",
+      },
+    ],
+    "education": [
+      {
+        "institution": "Thiagarajar College Of Engineering",
+        "department": "Mechatronics",
+        "studyType": "fulltime",
+        "batch start year": 2015,
+        "batch end year": 2019,
+        "gpa": 7.5,
       }
-      return titles;
+    ],
+    "skills": [
+      {
+        "name": "python,javascript",
+        "level": "beginer",
+        "project": [
+          "automatic attendance maintaing system using python language"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Tamil,Enlish",
+      }
+    ],
+    "interests": [
+      {
+        "name": "script writter,youtuber,",
+      }
+    ]
   }
-}
-
-// b)
-let rating = new Movie("Master", "AGS");
-console.log(`1. B.)
-Title : ${rating.title}
-Studio : ${rating.studio}
-Rating : ${rating.rating}`)
-
-// c)
-let PG = new Movie("vikram2", "kalpathi");
-console.log(`C.)
-Title : ${PG.title}
-Studio : ${PG.studio}
-Rating : ${PG.rating}
-
-Title : ${PG.getPG}, ${rating.title}
-`)
-
-
-// d)
-let movie = new Movie("Casino Royale", "Eon Productions", "PG-13")
-console.log(`D.)
-Title : ${movie.title}
-Studio : ${movie.studio}
-Rating : ${movie.rating}`)
-
-// question 2
-
-class Circle{
-  constructor(radius, color){
-      this.radius = radius;
-      this.color = color;
-  }
-  get Radius(){
-      return this.radius;
-  }
-  set Radius(radius){
-      this.radius = radius;
-  }
-  get Color(){
-      return this.color;
-  }
-  set Color(color){
-      this.color = color;
-  }
-  get toString(){
-      return `"Cercle[radius=${this.radius},color=${this.color}"]`
-  }
-  get Area(){
-      return Math.PI * this.radius * this.radius;
-  }
-  get Circumference(){
-      return Math.PI * this.radius;
-  }
-}
-
-let circle = new Circle(1.0, "red")
-
-console.log(`2. Question`)
-circle.Radius = 1.1
-console.log(`radius: ${circle.Radius}, color: ${circle.Color}`)
-circle.Color = "green";
-console.log(`
-setColor: ${circle.Color}
-
-toString: ${circle.toString}
-
-getArea: ${circle.Area}
-
-getCircumference: ${circle.Circumference}
-`)
-
-
-// 3.Write a “person” class to hold all the details.
-
-class Person{
-  constructor(name, age, gender, state, country){
-      this.name = name;
-      this.age = age;
-      this.gender = gender;
-      this.state = state;
-      this.country = country;
-  }
-}
-
-let person = new Person("dhivakar", 31, "Male", "Tamil nadu", "India");
-console.log(`3.Write a “person” class to hold all the details.
-${person.name}
-${person.age}
-${person.gender}
-${person.state}
-${person.country}
-`)
-
-// 4.write a class to calculate the uber price.
-
-const uber = {
-  set kiloMeter(km){    
-     this.price = `${km} km = Rs.${km * 50}` ;
-  },
-  get kiloMeter(){
-     return this.price;
-  }
-}
-
-uber.kiloMeter = 2;
-
-console.log(`4.) write a class to calculate the uber price.
-Answer : ${uber.kiloMeter}`)
+  console.log(myResume);
+  
