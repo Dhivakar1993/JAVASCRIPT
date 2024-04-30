@@ -3,7 +3,7 @@ let myResume={
       "name": "Dhivakar M",
       "email": "dhivadit@gamil.com",
       "phone": 9786475024,
-      "degree": "DIT",
+      "degree": "D",
       "location": {
         "address": "1-103, kudiyan street, Maruthuvakkudi",
         "postalCode": 609501,
